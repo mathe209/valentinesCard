@@ -1,5 +1,5 @@
 .hero {
-    background: url("/valenties/images/pic2_copy.png") center/cover no-repeat;
+    background: url("valenties/images/pic2_copy.png") center/cover no-repeat;
     text-align: center;
     padding: 100px 20px;
     position: relative;
