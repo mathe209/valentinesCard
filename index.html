@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ValentinesCard</title>
+        <title>Mosupatsela FM 107.4</title>
 
         <!-- Bootstrap 5 CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -13,68 +13,121 @@
     </head>
     <body>
         <div id="container" class="container">
-            <header class="text-light mb-3">
+            <header class="text-light bg-dark mb-3">
                 <section class="hero text-center">
                     <div class="hero-content">
-                        <h2 class="text-danger">Valentines Request Form!!</h2>
-                        <p>
-                            <strong
-                                ><em>
-                                <q>Every love story is beautiful, but ours is my favourite</q>....</em></strong
-                            >
-                        </p>
+                        <h1>MIT Solve: Global Economic Prosperity Challenge 2025</h1>
                     </div>
+                    <p>
+                        In an increasingly tech-driven world, are we truly equipping learners with the tools they need to thrive?
+                        South Africa continues to rank among the lowest globally in math and science performance, and lags behind
+                        in economic productivity among BRICS nations.
+                    </p>
+                    <p>
+                        These challenges are even more pressing for young people in under-resourced areas such as townships and rural communities.
+                        This survey seeks to understand the current state of digital literacy, information access, and economic awareness
+                        among Grade 12 learners — and explore how we might close the gap to a more inclusive future.
+                    </p>
                 </section>
             </header>
             <main class="text-center">
-                <h2>My Message...</h2>
-                <p>
-                    Good day babey<i id="smiley" class="fa-solid fa-face-smile-beam"></i>, I hope this finds you well.<br />
-                    As this is going to be our first valentines together, i thought i should do something a little
-                    crazy.
-                </p>
-                <p>
-                    I actually dont have words for a card, or a romantic message<br />so i decided to express myself by
-                    putting in an effort to create this website for you. <br />So, without Further delays. I would like
-                    to ask you this. WILL YOU BE MY VALENTINES?
-                </p>
                 <form
-                    id="valentine-form"
-                    action="https://formspree.io/f/mkgozleq"
-                    method="POST"
-                    onsubmit="return showThankYou()">
-                    <div class="mb-3">
-                        <label for="response" class="form-label">Your Response</label>
-                        <select id="response" name="response" class="form-select" required>
-                            <option value="" selected disabled>Select an option</option>
-                            <option value="Yes">Yes, I'd love to! ❤️</option>
-                            <option value="Maybe">Maybe, let me think about it 🤔</option>
-                            <option value="No">No, sorry 😢</option>
-                        </select>
-                    </div>
+                id="awareness-form"
+                action="https://formspree.io/f/mkgozleq"
+                method="POST"
+                onsubmit="return showThankYou()"
+                class="p-4 rounded shadow bg-light"
+              >
+                <h2 class="text-center mb-4">📊 Grade 12 Tech & Economic Awareness Survey</h2>
+              
+                <div class="mb-3">
+                  <label class="form-label">1. Do you have access to a smartphone, tablet?</label><br>
+                  <input type="radio" name="device_access" value="Yes" required> Yes
+                  <input type="radio" name="device_access" value="No"> No
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">2. Do you have access to a laptop, or computer?</label><br>
+                    <input type="radio" name="device_access" value="Yes" required> Yes
+                    <input type="radio" name="device_access" value="No"> No
+                  </div>
+              
+                <div class="mb-3">
+                  <label class="form-label">3. How often do you use the internet?</label><br>
+                  <select name="internet_use" class="form-select" required>
+                    <option value="">-- Select --</option>
+                    <option value="Daily">Daily</option>
+                    <option value="Weekly">Weekly</option>
+                    <option value="Rarely">Rarely</option>
+                    <option value="Never">Never</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                    <label>4. Have you ever created a document using Word, Google Docs or a similar tool?</label><br>
+                    <input type="radio" name="document_creation" value="Yes" required> Yes
+                    <input type="radio" name="document_creation" value="No"> No<br><br>
+                </div>
+                
+                <div class="mb-3">
+                  <label class="form-label">5. Have you heard of any of these terms?</label><br>
+                  <input type="checkbox" name="tech_terms" value="Coding"> Coding<br>
+                  <input type="checkbox" name="tech_terms" value="AI"> AI<br>
+                  <input type="checkbox" name="tech_terms" value="Data Science"> Data Science<br>
+                  <input type="checkbox" name="tech_terms" value="Cloud Computing"> Cloud Computing
+                </div>
+              
+                <div class="mb-3">
+                  <label class="form-label">6. Have you used any learning platforms (e.g. stuDocu, Coursera)?</label><br>
+                  <input type="radio" name="learning_platforms" value="Yes" required> Yes
+                  <input type="radio" name="learning_platforms" value="No"> No
+                </div>
+              
+                <div class="mb-3">
+                  <label class="form-label">7. What careers interest you the most?</label><br>
+                  <input type="text" name="career_interest" class="form-control" placeholder="e.g., doctor, engineer, app developer">
+                </div>
+              
+                <div class="mb-3">
+                  <label class="form-label">8. What challenges do you face when trying to learn something new?</label><br>
+                  <textarea name="learning_challenges" class="form-control" rows="3" placeholder="e.g., slow internet, lack of time, resources..."></textarea>
+                </div>
+              
+                <div class="mb-3">
+                  <label class="form-label">9. If you had a free tech course available at school, would you take it?</label><br>
+                  <input type="radio" name="course_interest" value="Yes" required> Yes
+                  <input type="radio" name="course_interest" value="No"> No
+                </div>
+              
+                <div class="mb-3">
+                  <label class="form-label">10. How could technology help young people in your community?</label><br>
+                  <textarea name="community_solution" class="form-control" rows="3" placeholder="Your opinion..."></textarea>
+                </div>
+              
+                <button type="submit" class="btn btn-primary w-100 mt-3">Submit</button>
+              </form>
+              
+              <!-- Thank You Message -->
+              <div id="thank-you-message" class="text-center mt-4 d-none">
+                <h4 class="text-success">🎉 Thank you for your response!</h4>
+                <p>Your feedback helps us shape better opportunities for young minds like yours.</p>
+              </div>
 
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Optional Message</label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            class="form-control"
-                            rows="3"
-                            placeholder="Write a message (optional)"></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-danger btn-lg mb-3">Send Response</button>
-                </form>
             </main>
             <footer class="bg-dark text-white text-center py-3 mt-0">
-                <p>&copy; From Mathe, to Nobuhle <i class="fa-solid fa-heart text-danger"></i>.</p>
+                <p>&copy; Mathe Mohlamme. April 2025</p>
             </footer>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+              
+              <script>
+                function showThankYou() {
+                  document.getElementById('awareness-form').classList.add('d-none');
+                  document.getElementById('thank-you-message').classList.remove('d-none');
+                  return true;
+                }
+              </script>
         <script>
             function showThankYou() {
-                alert("Thank you for your response, an email has been sent to your boyfriend! 💖");
+                alert("Thank you for your response");
                 return true; // Allows the form to submit
             }
         </script>
